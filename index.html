@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de voiture</title>
+
+    <!-- Import de Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4b433f8eb.js" crossorigin="anonymous"></script>
+   
+    <!-- Import de CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <nav>
+            <div class="toggle">
+                <i class="fas fa-bars ouvrir"></i>
+                <i class="fas fa-times fermer"></i>
+            </div>
+
+            <ul class="menu">
+                <li><a href="">Louer une voiture</a></li>
+                <li><a href="">Louer un utilitaire</a></li>
+                <li><a href="">Réservez un chauffeur</a></li>
+                <li><a href="">Découvrez nos agences</a></li>
+                <li><a href="">Mon compte </a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="txt">
+            <h1>Bienvenue à bord</h1>
+            <h3>Location de voiture 24h/24 et 7j/7</h3>
+        </div>
+    </div>
+        <div class="container-reservation">
+            <div class="content">
+                <div class="reserv">
+                    <form action="">
+                        <div class="separator-reserv">
+                            <div>
+                                <select class="header-select" name="adress" id="adress_id">
+                                    <option value="">Adresse de départ</option>
+                                    <option value="">Paris</option>
+                                    <option value="">Compiegne</option>
+                                    <option value="">Marseille</option> 
+                                </select>  
+                            </div>
+
+                            <div>
+                                <input type="date" name="" id="date-depart" value="">
+                            </div>
+
+                            <div>
+                                <input type="date" name="" id="date-fin">
+                            </div>
+                        </div>
+                </div>
+                        <div class="btn">
+                            <button type="submit" class="validate" >Valider</button>
+                        </div>
+            </form>
+            </div>
+        </div>
+    
+    <!-- Image slider start -->
+    <div class="slider">
+        <div class="slides">
+            <!-- radio buttons start -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- radio buttons end -->
+
+            <!-- slide images start -->
+            <div class="slide first">
+                <img src="./img/background.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/voituregrise.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/goh-rhy-yan-f_SDCASisgs-unsplash.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/voiturenoire.jpg" alt="">
+            </div>
+            <!-- slide images end -->
+        </div>
+    <!-- image slider end -->
+    </div>
+</header>
+
+<main>
+    <!-- Main header -->
+      <div class="main-header">
+        <div class="resultat">
+            <p>7 résultats</p>
+        </div>
+        <div class="prix-croissant">
+            <select class="main-select" name="price" id="prix">
+                <option value="">Prix croissant</option>
+                <option value="">999€</option>
+                <option value="">1100€</option>
+                <option value="">1150€</option> 
+            </select>
+        </div>
+      </div>
+    <!--End Main Header -->
+
+    <!-- Main Content -->
+        <div class="main-content margin">
+            <!-- CARD IMAGE -->
+            <div class="card-image">
+                <div class="arrow-left center"><button onclick="imagePrecedente();"><i class="fa-solid fa-caret-left fleche"></i></button></div>
+                <div class="bloc-image">
+                    <img src="./img/vehicule1.png" alt="" class="image" id="galerie">
+                </div>
+                <div class="arrow-right center"><button onclick="imageSuivante();"><i class="fa-solid fa-caret-right fleche"></i></button></div>
+            </div>
+            <!-- CARD CONTENT -->
+            <div class="card">
+                <div class="card-title">
+                    <h3>Peugeot 208</h3>
+                </div>
+                <div class="card-description">
+                    <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire).</p>
+                </div>
+                <div class="card-price">
+                    <span class="price">999€ - Agence de paris</span>
+                </div>
+                <div class="card-button">
+                    <button class="main-btn">Réserver et Payer</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        
+            <div class="main-content margin">
+                <!-- CARD IMAGE -->
+                <div class="card-image">
+                    <div class="arrow-left center"><button onclick="imagePrecedente();"><i class="fa-solid fa-caret-left fleche"></i></button></div>
+                    <div class="bloc-image">
+                        <img src="./img/vehicule2.png" alt="" class="image" id="galerie">
+                    </div>
+                    <div class="arrow-right center"><button onclick="imageSuivante();"><i class="fa-solid fa-caret-right fleche"></i></button></div>
+                </div>
+                <!-- CARD CONTENT -->
+                <div class="card">
+                    <div class="card-title">
+                        <h3>Ford Focus</h3>
+                    </div>
+                    <div class="card-description">
+                        <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire).</p>
+                    </div>
+                    <div class="card-price">
+                        <span class="price">999€</span>
+                    </div>
+                    <div class="card-button">
+                        <button class="main-btn">Réserver et Payer</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+             <!--Une div margin pour mettre de l'espace entre les bloc-->
+                <div class="main-content margin">
+                    <!-- CARD IMAGE -->
+                    <div class="card-image">
+                        <div class="arrow-left center"><button onclick="imagePrecedente();"><i class="fa-solid fa-caret-left fleche"></i></button></div>
+                        <div class="bloc-image mt-1-5">
+                            <img src="./img/vehicule3.png" alt="" class="image" id="galerie">
+                        </div>
+                        <div class="arrow-right center"><button onclick="imageSuivante();"><i class="fa-solid fa-caret-right fleche"></i></button></div>
+                    </div>
+                    <!-- CARD CONTENT -->
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>Audi A1</h3>
+                        </div>
+                        <div class="card-description">
+                            <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire).</p>
+                        </div>
+                        <div class="card-price">
+                            <span class="price">1100€ - Agence de Paris</span>
+                        </div>
+                        <div class="card-button">
+                            <button class="main-btn">Réserver et Payer</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <hr>
+
+                
+                    <div class="main-content margin">
+                        <!-- CARD IMAGE -->
+                        <div class="card-image">
+                            <div class="arrow-left center"><button onclick="imagePrecedente();"><i class="fa-solid fa-caret-left fleche"></i></button></div>
+                            <div class="bloc-image mt-4">
+                                <img src="./img/vehicule4.png" alt="" class="image" id="galerie">
+                            </div>
+                            <div class="arrow-right center"><button onclick="imageSuivante();"><i class="fa-solid fa-caret-right fleche"></i></button></div>
+                        </div>
+                        <!-- CARD CONTENT -->
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>Opel Mokka</h3>
+                            </div>
+                            <div class="card-description">
+                                <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km supplémentaire).</p>
+                            </div>
+                            <div class="card-price">
+                                <span class="price">1150€ - Agence de paris</span>
+                            </div>
+                            <div class="card-button">
+                                <button class="main-btn">Réserver et Payer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+            <!-- End MAIN CONTENT -->
+</main>
+
+<footer>
+    <div class="main-footer">
+        <div class="footer-image">
+            <img src="./img/agence.jpg" alt="">
+        </div>
+        <div class="content-footer">
+            <p>Notre Agence de Paris</p>
+            <p>300 boulevard de vaugirard 75015, Paris</p>
+            <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+            <p>01 49 78 21 33</p>
+            <p>contact@vtc.com</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
