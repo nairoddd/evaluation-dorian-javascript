@@ -1,6 +1,6 @@
 # Evaluation JavaScript
 
-Réalisation d'un site concernant de location de voiture
+Réalisation d'un site concernant la location de voiture
 
 ## Les tâches à réaliser
 
